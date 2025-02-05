@@ -65,7 +65,8 @@
   - 몬스터의 상태는 서버의 tick 때마다 업데이트 되는 게 아닌, 상태를 카운터를 넣고 해당 카운터값이 되면 작동되도록 구성
 - 모든 몬스터가 업데이트되면 상태, 좌표 등의 정보를 동기화 하기 위해 모든 클라이언트에 전달합니다.
 - tick 동작 (일정 카운트 값이 되면 상태와 행동이 업데이트되는 방식)
-  ![tick](https://github.com/qornwh/Portfolio/blob/main/tick.png)
+  <br>
+  <img src="./img/tick.png" height="100"/>
 
 ### 4. 데이터관리를 위한 json과 datatable사용해 아이템, 몬스터 수치를 컴파일 없이 바로 수정
 
@@ -238,7 +239,8 @@ client : https://github.com/Theta08/RpgProject
   - 헤더의 size만큼 패킷이 존재할 때 파싱을 진행합니다.
   - 헤더의 코드에 맞는 패킷을 읽어내면서 읽는 위치를 데이터 타입만큼 position을 증가하면서 진행합니다.
   - 배열이나 문자열인 경우 읽는 위치를 'size'만큼 position을 증가하면서 진행합니다.
-    ![packet](https://github.com/qornwh/Portfolio/blob/main/packet.png)
+    <br>
+    <img src="./img/packet.png" height="120"/>
 
 ### 3. 플레이어, 몬스터 시뮬레이션
 
