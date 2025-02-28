@@ -123,7 +123,7 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 </details>
 
-[인벤토리, 우편 추가 내용 링크]()
+Wiki : [인벤토리, 우편 추가 내용 Wiki](https://github.com/qornwh/Portfolio/wiki/%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%EC%99%80-%EC%9A%B0%ED%8E%B8)
 
 ## 언리얼의 클라이언트 개발시 효율적인 메모리 관리를 위해 smart_ptr사용
 
