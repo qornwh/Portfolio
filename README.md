@@ -3,11 +3,9 @@
 ## 중점적으로 다룬 내용입니다.
 
 - <b>클라이언트와 서버에서 물리충돌에 처리</b>
-- <b>몬스터 상태에 따른 행동 및 클라이언트에서 동기화</b>
 - <b>서버의 인게임에서 tick 처리</b>
-- <b>캐릭터, 아이템등 수치를 코드가 아닌 관리하는 방법</b>
-- <b>인벤토리와 같은 기능은 온라인게임을 참고하면서 순서를 생각하여 응용</b>
-- <b>Windows와 Linux환경에 맞는 게임서버 개발</b>
+- <b>아이템, 우편, 인벤토리등 서버에서의 처리</b>
+- <b>메모리 관리를 위해 smart_ptr사용</b>
 
 ## 사용 언어, 툴
 
@@ -123,15 +121,15 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 </details>
 
-Wiki : [인벤토리, 우편 추가 내용 Wiki](https://github.com/qornwh/Portfolio/wiki/%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%EC%99%80-%EC%9A%B0%ED%8E%B8)
+인벤토리, 우편 추가 내용 wiki : [인벤토리, 우편 추가 내용 wiki](https://github.com/qornwh/Portfolio/wiki/%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%EC%99%80-%EC%9A%B0%ED%8E%B8)
 
 ## 언리얼의 클라이언트 개발시 효율적인 메모리 관리를 위해 smart_ptr사용
 
-> RPG 게임의 특성은 캐릭터 능력치, 인벤토리, 아이템, 스킬등 여러가지 기능들은 굳이 액터를 상속받아서 메모리를 또 올려야 되는지 고민했습니다.
-> 이를 해결하기 저는 서버에서 사용했던 ```smart_ptr```을 사용해서 메모리 해제의 이점과 액터를 만들어 메모리에 대한 이점도 챙기게 되었습니다.
-> 캐릭터 능력치, 인벤토리, 우편등을 ui클래스, Actor와 분리해서 GameInstance, GameInstance에서 받아오도록 구현했습니다. 
+> - RPG 게임의 특성은 캐릭터 능력치, 인벤토리, 아이템, 스킬등 여러가지 기능들은 굳이 액터를 상속받아서 메모리를 또 올려야 되는지 고민했습니다.
+> - 이를 해결하기 저는 서버에서 사용했던 ```smart_ptr```을 사용해서 메모리 해제의 이점과 액터를 만들어 메모리에 대한 이점도 챙기게 되었습니다.
+> - 캐릭터 능력치, 인벤토리, 우편등을 ui클래스, Actor와 분리해서 GameInstance, GameInstance에서 받아오도록 구현했습니다. 
 
-[클라이언트 추가 내용 링크]()
+클라이언트 추가 내용 wiki : [클라이언트 추가 내용 wiki](https://github.com/qornwh/Portfolio/wiki/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8)
 
 ## 인게임 서버의 부담을 줄이기 위하 웹 api 서버 구현
 
@@ -139,7 +137,7 @@ Wiki : [인벤토리, 우편 추가 내용 Wiki](https://github.com/qornwh/Portf
 
 ## DB 테이블 구조
 
-[DB 테이블 구조 링크]()
+DB 테이블 구조 링크 wiki: [DB 테이블 구조 링크 wiki](https://github.com/qornwh/Portfolio/wiki/DB-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%EC%BB%A4%EB%84%A5%EC%85%98)
 
 server : https://github.com/qornwh/MMO_GameServer
 <br>
