@@ -123,22 +123,23 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 </details>
 
-[인벤토리, 우편 상세 구현 링크]()
+[인벤토리, 우편 추가 내용 링크]()
 
-## 클라이언트 
+## 언리얼의 클라이언트 개발시 효율적인 메모리 관리를 위해 smart_ptr사용
 
-> [클라이언트 상세 구현 링크]()
-- 풀링
-- config
-- 네트워크
+> RPG 게임의 특성은 캐릭터 능력치, 인벤토리, 아이템, 스킬등 여러가지 기능들은 굳이 액터를 상속받아서 메모리를 또 올려야 되는지 고민했습니다.
+> 이를 해결하기 저는 서버에서 사용했던 ```smart_ptr```을 사용해서 메모리 해제의 이점과 액터를 만들어 메모리에 대한 이점도 챙기게 되었습니다.
+> 캐릭터 능력치, 인벤토리, 우편등을 ui클래스, Actor와 분리해서 GameInstance, GameInstance에서 받아오도록 구현했습니다. 
 
-## 웹 api 서버
+[클라이언트 추가 내용 링크]()
 
-> [웹 api 서버 상세 구현 링크]()
+## 인게임 서버의 부담을 줄이기 위하 웹 api 서버 구현
+
+[웹 api 서버 구현 링크]()
 
 ## DB 테이블 구조
 
-> [DB 테이블 구조 링크]()
+[DB 테이블 구조 링크]()
 
 server : https://github.com/qornwh/MMO_GameServer
 <br>
