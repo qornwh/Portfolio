@@ -126,7 +126,7 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 ## 인게임 서버의 부담을 줄이기 위하 웹 api 서버 구현
 
-웹 api 서버 : [wiki]()
+웹 api 서버 : [wiki](https://github.com/qornwh/Portfolio/wiki/Web%E2%80%90API-%EC%84%9C%EB%B2%84)
 
 ## DB 테이블 구조
 
