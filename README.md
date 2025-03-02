@@ -126,7 +126,7 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 ## 인게임 서버의 부담을 줄이기 위하 웹 api 서버 구현
 
-[웹 api 서버 구현 링크]()
+웹 api 서버 : [wiki]()
 
 ## DB 테이블 구조
 
@@ -237,9 +237,9 @@ client : https://github.com/qornwh/MMO_GameClient
 <img src="./img/패킷.png" height="350"/>
 
 > 패킷 파싱 진행입니다.
->> 패킷은 ```헤더 길이 체크``` => 헤더의 4바이트 만큼 패킷이 존재할 때 파싱을 진행합니다.<br>
->> ```헤더의 코드```에 맞는 패킷을 읽어내면서 읽는 위치를 데이터 타입만큼 position을 증가하면서 진행합니다.<br>
->> ```배열이나 문자열```인 경우 읽는 위치를 'size'만큼 position을 증가하면서 진행합니다.<br>
+> 1. 패킷은 ```헤더 길이 체크``` => 헤더의 4바이트 만큼 패킷이 존재할 때 파싱을 진행합니다.<br>
+> 2. ```헤더의 코드```에 맞는 패킷을 읽어내면서 읽는 위치를 데이터 타입만큼 position을 증가하면서 진행합니다.<br>
+> 3. ```배열이나 문자열```인 경우 읽는 위치를 'size'만큼 position을 증가하면서 진행합니다.<br>
 
 <details>
 <summary>언리얼 클라이언트 구성</summary>
