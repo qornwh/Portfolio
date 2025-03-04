@@ -233,7 +233,7 @@ client : https://github.com/qornwh/MMO_GameClient
 - 패킷 => 헤더(code 2바이트 + size 2바이트 => 4바이트) + 데이터로 구성했습니다.
 - 배열과 문자열을 처리하기 위해서 size+내용을 한 쌍으로 구현했습니다.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/패킷.png" height="350"/>
+<img src="https://github.com/qornwh/Portfolio/blob/main/img/패킷.png" height="200"/>
 
 - 패킷 파싱 진행입니다.
   1. 패킷은 ```헤더 길이 체크``` => 헤더의 4바이트 만큼 패킷이 존재할 때 파싱을 진행합니다.<br>
