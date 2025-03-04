@@ -5,6 +5,8 @@
 - 게임개발 : C++, C#, Unreal, VisualStudio, Rider
 - 툴개발 : JavaScript, Node.js, VSCode
 
+---
+
 ## 1. Hunters & Creature 프로젝트
 
 ### 소개
@@ -26,7 +28,7 @@
 - 캐릭터, 아이템, 스킬정보를 ```config.json, dataTable 분리한``` 이유는 다음과 같습니다.
   - 아이템, 캐릭터, 스킬의 수치를 수정할 때 코드로 작성하게 되면 수정하면 다시 컴파일도 필요하고, 프로그래머가 아니면 수정이 힘들고 의존성 때문에 분리했습니다.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/게임구성도.png" height="350"/>
+<img src="./img/게임구성도.png" height="300"/>
 
 ### 게임서버의 ```게임 룸과 프레임```처리
 
@@ -37,7 +39,7 @@
 - 게임 프레임(일정 시간마다 몬스터 상태 업데이트) 처리 방법
   - 일정 시간마다 프레임을 업데이트하기 위해 ```게임 룸```이 사용하는 IOCP에 업데이트를 넣었습니다. 이중으로 관리해서 lock을 거는 것 보다 해당 방법이 좀 더 lock 호출이 적게 나가기 때문에 이런 방식을 선택했습니다.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/게임프레임.png" height="350"/>
+<img src="./img/게임프레임.png" height="300"/>
 
 <details>
 <summary>코드 참고 </summary>
@@ -74,7 +76,7 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 - 서버에서 공격판정을 ```한 번 더``` 처리한 이유는 다음과 같습니다.
   - 클라이언트에서 공격판정에 대한 ```변조```를 막기 위해 ```서버에서 공격판정을 한 번 더 처리했습니다```.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/공격판정.png" height="350"/>
+<img src="./img/공격판정.png" height="300"/>
 <details>
 <summary>서버의 공격판단에 대한 문제와 해결</summary>
 
@@ -189,6 +191,8 @@ client : https://github.com/qornwh/MMO_GameClient
   2. BeginReceive의 콜백함수에서 받아온 ```패킷을 queue에 push```한다.
   3. ```게임 프레임이 업데이트```될 때 queue에서 모든 패킷을 pop해서 처리한다.
 
+---
+
 ## MMORPG Simulation
 
 ### 소개
@@ -207,7 +211,7 @@ client : https://github.com/qornwh/MMO_GameClient
 
 - 리눅스로 게임서버를 개발을 선택한 이유는 궁금했고, 혹시나 모를 윈도우에서 -> 리눅스 간의 포팅작업도 있을 수 있기 때문입니다.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/epoll.png" height="350"/>
+<img src="./img/epoll.png" height="350"/>
 
 <details>
 <summary>Epoll 통신 진행 중 발생한 문제해결 방법</summary>
@@ -233,7 +237,7 @@ client : https://github.com/qornwh/MMO_GameClient
 - 패킷 => 헤더(code 2바이트 + size 2바이트 => 4바이트) + 데이터로 구성했습니다.
 - 배열과 문자열을 처리하기 위해서 size+내용을 한 쌍으로 구현했습니다.
 
-<img src="https://github.com/qornwh/Portfolio/blob/main/img/패킷.png" height="200"/>
+<img src="./img/패킷.png" height="200"/>
 
 - 패킷 파싱 진행입니다.
   1. 패킷은 ```헤더 길이 체크``` => 헤더의 4바이트 만큼 패킷이 존재할 때 파싱을 진행합니다.<br>
