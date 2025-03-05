@@ -3,7 +3,6 @@
 ## 사용 언어, 툴
 
 - 게임개발 : C++, C#, Unreal, VisualStudio, Rider
-- 툴개발 : JavaScript, Node.js, VSCode
 
 ---
 
@@ -15,6 +14,8 @@
 - 인원 : 1명 (서버 담당(C++), 클라이언트(ue5) 담당)
 - 라이브러리 : Google::protobuf, nlohmann/json
 - 해당 프로젝트는 3인칭 백뷰 방식의 MMORPG 게임입니다.
+- [github server 링크](https://github.com/qornwh/MMO_GameServer)
+- [github client 링크](https://github.com/qornwh/MMO_GameClient)
   <br>
   [![Video Label](https://img.youtube.com/vi/Z_v4MGjklCA/0.jpg)](https://youtu.be/Z_v4MGjklCA)
 
@@ -116,7 +117,7 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 
 </details>
 
-인벤토리, 우편 추가 내용 : [wiki](https://github.com/qornwh/Portfolio/wiki/%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%EC%99%80-%EC%9A%B0%ED%8E%B8)
+인벤토리, 우편 추가 내용 : [github wiki 링크](https://github.com/qornwh/Portfolio/wiki/%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%EC%99%80-%EC%9A%B0%ED%8E%B8)
 
 ## 언리얼의 클라이언트 개발 시 효율적인 메모리 관리를 위해 smart_ptr 사용
 
@@ -124,19 +125,15 @@ if (!curLoopTask && isLoopTask.compare_exchange_strong(curLoopTask, true))
 - 이를 해결하기 저는 서버에서 사용했던 ```smart_ptr```을 사용해서 메모리 해제의 이점과 액터 대신 객체로 할당해 엑터에 소비되는 메모리 이점도 챙기게 되었습니다.
 - 캐릭터 능력치, 인벤토리, 우편 등은 ui클래스, Actor와 분리해서 GameInstance, GameInstance에서 받아오도록 구현했습니다. 
 
-클라이언트 추가 내용 : [wiki](https://github.com/qornwh/Portfolio/wiki/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8)
+클라이언트 추가 내용 : [github wiki 링크](https://github.com/qornwh/Portfolio/wiki/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8)
 
 ## 인게임 서버의 부담을 줄이기 위해 웹 api 서버 구현
 
-웹 api 서버 : [wiki](https://github.com/qornwh/Portfolio/wiki/Web%E2%80%90API-%EC%84%9C%EB%B2%84)
+웹 api 서버 : [github wiki 링크](https://github.com/qornwh/Portfolio/wiki/Web%E2%80%90API-%EC%84%9C%EB%B2%84)
 
 ## DB 테이블 구조
 
-DB 테이블 구조 링크: [wiki](https://github.com/qornwh/Portfolio/wiki/DB-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%EC%BB%A4%EB%84%A5%EC%85%98)
-
-server : https://github.com/qornwh/MMO_GameServer
-<br>
-client : https://github.com/qornwh/MMO_GameClient
+DB 테이블 구조 링크: [github wiki 링크](https://github.com/qornwh/Portfolio/wiki/DB-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%EC%BB%A4%EB%84%A5%EC%85%98)
 
 ---
 
@@ -149,8 +146,8 @@ client : https://github.com/qornwh/MMO_GameClient
 - 개발환경 : Windows
 - 라이브러리 : Google::protobuf, Boost::Json
 - 해당 프로젝트는 탑뷰방식의 MMORPG게임입니다.
-- server 코드 : https://github.com/qornwh/GameServerProject
-- client 코드 : https://github.com/Theta08/RpgProject
+- [github server 링크](https://github.com/qornwh/GameServerProject)
+- [github client 링크](https://github.com/Theta08/RpgProject)
   <br>
   [![Video Label](http://img.youtube.com/vi/bkWg1QWX7Vs/0.jpg)](https://youtu.be/bkWg1QWX7Vs)
 
@@ -202,8 +199,8 @@ client : https://github.com/qornwh/MMO_GameClient
 - 개발환경 : Linux, Windows
 - 개발언어, 개발도구 : C++(Epoll), Unreal, VSCode
 - 해당 프로젝트는 MORPG, MMORPG게임들의 서버-클라이언트 구조로 시뮬레이션만 심플하게 제작되었습니다.
-- server 코드 : https://github.com/qornwh/BSGameServer
-- client 코드 : https://github.com/qornwh/BSGameClientUE5
+- [github server 링크](https://github.com/qornwh/BSGameServer)
+- [github client 링크](https://github.com/qornwh/BSGameClientUE5)
   <br>
   [![Video Label](http://img.youtube.com/vi/NIEy5bpEhBk/0.jpg)](https://youtu.be/NIEy5bpEhBk)
 
