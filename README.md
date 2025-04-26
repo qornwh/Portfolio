@@ -2,15 +2,24 @@
 
 ## 사용 언어, 툴
 
-- 게임개발 : C++, C#, Unreal, VisualStudio, Rider
+- 게임개발 : C++, C#, Unity, Unreal, VisualStudio, Rider
 
 ---
 
-## 1. Hunters & Creature 프로젝트
+## Tower of Valor 프로젝트
+
+### 소개
+> 자세한 프로젝트 관련 내용은 [링크](https://github.com/qornwh/TurnBaseGame/tree/main)에서 확인 가능합니다.
+- 기간 : 2025.03 ~ 현재
+- 인원 : 1명 (클라이언트 담당(C#))
+- 해당 프로젝트는 스테이지 형식의 턴제 기반 게임입니다.
+  <br>
+  [![Video Label](https://img.youtube.com/vi/THqsOWOiuUg/0.jpg)](https://youtu.be/THqsOWOiuUg)
+## Hunters & Creature 프로젝트
 
 ### 소개
 
-- 기간 : 2024.07 ~ 현재
+- 기간 : 2024.07 ~ 2025.03
 - 인원 : 1명 (서버 담당(C++), 클라이언트(ue5) 담당)
 - 라이브러리 : Google::protobuf, nlohmann/json
 - 해당 프로젝트는 3인칭 백뷰 방식의 MMORPG 게임입니다.
